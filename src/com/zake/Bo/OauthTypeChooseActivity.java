@@ -33,6 +33,10 @@ public class OauthTypeChooseActivity extends Activity implements OnClickListener
 	private Button renrenAuthorizeBtn;
 	private Button loginBtn;
 	
+
+	private final int RESULT_RENREN_OK = 2;
+	private final int RESULT_SINA_OK = 1;
+	
 	private MyWeiboManager mWeiboManager;
 	
     public void onCreate(Bundle savedInstanceState) {
@@ -90,7 +94,7 @@ public class OauthTypeChooseActivity extends Activity implements OnClickListener
 			goAuthoActivity(1);
 			break;
 		case R.id.btnLogin:
-			goPlayActivity();
+			goPlayActivity(RESULT_SINA_OK);
 			break;
 		case R.id.btnRenrenOauth:
 			goAuthoActivity(2);
@@ -116,12 +120,17 @@ public class OauthTypeChooseActivity extends Activity implements OnClickListener
 	private void onResultForAuthActivity(int resultCode)
 	{
 		switch (resultCode) {
-			case RESULT_OK:
+			case RESULT_SINA_OK:
 			{
-				goPlayActivity();
+				goPlayActivity(RESULT_SINA_OK);
 				finish();
 			}
 			break;
+			
+			case RESULT_RENREN_OK:
+				goPlayActivity(RESULT_RENREN_OK);
+				break;
+			
 
 		default:
 			break;
@@ -140,9 +149,10 @@ public class OauthTypeChooseActivity extends Activity implements OnClickListener
 	
 	
 
-	public void goPlayActivity()
+	public void goPlayActivity(int playType)
 	{
 		Intent intent = new Intent();
+		intent.putExtra("play_type", playType);
 		intent.setClass(OauthTypeChooseActivity.this, PlayWeiboActivity.class);
 		startActivity(intent);
 		finish();
