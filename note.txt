@@ -1,0 +1,5 @@
+1.0:
+调用api时的url如果是“http”则需要添加signature，如果是“https”则不许要
+
+2.0:
+
