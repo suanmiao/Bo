@@ -22,5 +22,14 @@
         android:layout_height="wrap_content"
         android:text="Login" 
         android:visibility="gone"/>
+    
+     <Button
+        android:id="@+id/btnRenrenOauth"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="Renren" 
+        />
+    
+    
 
 </LinearLayout>

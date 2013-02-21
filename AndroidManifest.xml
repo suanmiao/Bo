@@ -14,18 +14,19 @@
 		android:icon="@drawable/ic_launcher"
 		android:label="@string/app_name" >
 		<activity
-			
-			android:name=".Activity.TestWeiboDemoActivity"
-			android:label="@string/app_name" >
-			<intent-filter>
-				<action android:name="android.intent.action.MAIN" />
-				<category android:name="android.intent.category.LAUNCHER" />
-			</intent-filter>
-		</activity>
-		<activity android:name=".BoActivity"></activity>
-		<activity android:name=".Activity.WebViewActivity"></activity>
-		<activity android:name=".Activity.PlayWeiboActivity"></activity>
+            android:name=".OauthTypeChooseActivity"
+            android:label="@string/app_name" 
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+		
 		<activity android:name="BoActivity"></activity>
 		<activity android:name="com.zake.UI.mWebViewAcitivity"></activity>
+		<activity android:name="com.zake.Weibo.Activity.PlayWeiboActivity"></activity>
+		<activity android:name=".WebViewActivity"></activity>
 	</application>
 </manifest>

@@ -36,18 +36,19 @@ public final class R {
     }
     public static final class id {
         public static final int btnAuthrize=0x7f060001;
-        public static final int btnClose=0x7f060004;
+        public static final int btnClose=0x7f060005;
         public static final int btnLogin=0x7f060002;
-        public static final int btnSend=0x7f060005;
-        public static final int etEdit=0x7f06000a;
-        public static final int llImage=0x7f060006;
-        public static final int ll_text_limit_unit=0x7f060008;
-        public static final int rlTitle=0x7f060003;
-        public static final int rlTotal=0x7f060007;
-        public static final int show_request_progress_bar=0x7f06000c;
+        public static final int btnRenrenOauth=0x7f060003;
+        public static final int btnSend=0x7f060006;
+        public static final int etEdit=0x7f06000b;
+        public static final int llImage=0x7f060007;
+        public static final int ll_text_limit_unit=0x7f060009;
+        public static final int rlTitle=0x7f060004;
+        public static final int rlTotal=0x7f060008;
+        public static final int show_request_progress_bar=0x7f06000d;
         public static final int textToast=0x7f060000;
-        public static final int tv_text_limit=0x7f060009;
-        public static final int webview=0x7f06000b;
+        public static final int tv_text_limit=0x7f06000a;
+        public static final int webview=0x7f06000c;
     }
     public static final class layout {
         public static final int main=0x7f030000;
